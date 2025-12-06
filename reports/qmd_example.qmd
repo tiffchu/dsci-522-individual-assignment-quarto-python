@@ -2,13 +2,14 @@
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 execute:
-    echo: false
-format: 
-    html:
-        toc: true
-        toc-depth: 2
-        toc-title: Table of Contents
-        ref-title: 'References'
+  echo: false  
+format:
+  html:
+    toc: true
+    toc-depth: 3
+  pdf:
+    toc: true
+    toc-depth: 3
 bibliography: references.bib
 editor: source
 ---
@@ -19,18 +20,18 @@ from IPython.display import Markdown, display
 from tabulate import tabulate
 ```
 
-## Aim
+# Aim
 
 This project explores the historical population of horses in Canada 
 between 1906 and 1972 for each province.
 
-## Data
+# Data
 
 Horse population data were sourced from the 
 [Government of Canada's Open Data website](http://open.canada.ca/en/open-data) 
 (@horses1 @horses2).
 
-## Methods
+# Methods
 
 The Python programming language (@Python)
 and the following Python packages were used to perform the analysis: 
@@ -38,7 +39,7 @@ pandas (@pandas), altair (@altair), click (@click),
 as well as Quarto (@Allaire_Quarto_2022). 
 *Note: this report is adapted from Timbers (2020).* 
 
-## Results
+# Results
 
 ![Horse populations for all provinces in Canada from 1906 - 1972](../results/horse_pops_plot.png){width=60% #fig-1}
 
@@ -77,4 +78,4 @@ Additionally, note that in @tbl-prov we consider the sample standard deviation o
 
 In @fig-2 we zoom in and look at the province of `{python} largest_sd` which had the largest spread of values in terms of standard deviation.
 
-## References
+# References
